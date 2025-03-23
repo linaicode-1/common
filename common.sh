@@ -303,6 +303,7 @@ fi
 
 # 添加自定义插件源
 echo "src-git danshui https://github.com/linaicode-1/openwrt-package.git;$SOURCE" >> feeds.conf.default
+echo "src-git gxnas https://github.com/gxnas/OpenWrt_Build_x64_Packages.git;$SOURCE" >> feeds.conf.default
 ./scripts/feeds update -a > /dev/null 2>&1
  
  z="*luci-theme-argon*,*luci-app-argon-config*,*luci-theme-Butterfly*,*luci-theme-netgear*,*luci-theme-atmaterial*, \
